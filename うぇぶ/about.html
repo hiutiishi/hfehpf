@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>プロフィール</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #000; /* 背景色を黒に変更 */
+            color: #fff; /* テキスト色を白に変更 */
+        }
+        .profile-container {
+            display: flex; /* フレックスボックスを使用 */
+            justify-content: space-around; /* プロフィール間のスペースを均等に配置 */
+            flex-wrap: wrap; /* 画面サイズに応じて折り返す */
+            margin: 20px; /* 上下のマージン */
+        }
+        .profile-card {
+            width: 30%; /* 各プロフィールカードの幅 */
+            background: #222; /* カードの背景色を暗い灰色に */
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* ボックスシャドウを白に */
+            margin-bottom: 20px; /* カードの下部にマージン */
+            text-align: center; /* 中央揃え */
+        }
+        .profile-pic {
+            display: block;
+            margin: 0 auto;
+            border-radius: 50%;
+            width: 150px;
+            height: 150px;
+            object-fit: cover;
+        }
+        .skills {
+            list-style-type: none;
+            padding: 0;
+        }
+        .skills li {
+            background: #444; /* スキルの背景色を暗く */
+            margin: 5px 0;
+            padding: 10px;
+            border-radius: 4px;
+            color: #fff; /* スキルテキストの色を白に */
+        }
+        .contact {
+            margin-top: 20px;
+        }
+        .contact a {
+            color: #1E90FF; /* リンクの色を青に */
+            text-decoration: none;
+        }
+        .contact a:hover {
+            text-decoration: underline; /* ホバー時の下線 */
+        }
+    </style>
+</head>
+<body>
+
+    <h1 style="text-align: center; color: #fff;">プロフィール一覧</h1>
+    <div class="profile-container">
+
+        <div class="profile-card">
+            <img src="profile1.jpg" alt="プロフィール写真" class="profile-pic">
+            <h2>ひうちいし</h2>
+            <p>自己紹介: こんにちは！私はWeb開発者で、特にフロントエンドに情熱を持っています。新しい技術を学び、クリエイティブなプロジェクトに取り組むことが大好きです。</p>
+
+            <h3>スキル</h3>
+            <ul class="skills">
+                <li>HTML/CSS</li>
+                <li>JavaScript</li>
+            </ul>
+
+            <div class="contact">
+                <h3>連絡先情報</h3>
+                <p>Email: <a href="mailto:zizenapu@fuwari.be">zizenapu@fuwari.be</a></p>
+                <p>GitHub: <a href="https://github.com/hiutiishi" target="_blank">ひうちいし</a></p>
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="profile2.jpg" alt="プロフィール写真" class="profile-pic">
+            <h2>甘鐘　るか</h2>
+            <p>自己紹介: こんにちは！私はグラフィックデザイナーで、視覚的な表現に情熱を持っています。特に印刷物とデジタルデザインが得意です。</p>
+
+            <h3>スキル</h3>
+            <ul class="skills">
+                <li>Photoshop</li>
+                <li>Illustrator</li>
+                <li>UI/UXデザイン</li>
+                <li>ブランディング</li>
+            </ul>
+
+            <div class="contact">
+                <h3>連絡先情報</h3>
+                <p>GitHub: <a href="https://github.com/yama-github-account" target="_blank">るか</a></p>
+                <p>メールアドレス: <a href="mailto:amagane020ruka@gmail.com">お問い合わせはこちら</a></p>
+
+            </div>
+        </div>
+
+        <div class="profile-card">
+            <img src="profile3.jpg" alt="プロフィール写真" class="profile-pic">
+            <h2>ドナルド</h2>
+            <p>私はDonald_kunです。主にJava、Htmlを担当しております。将来はエンジニアになりたいです。
+            バックエンドを担当しています</p>
+
+            <h3>スキル</h3>
+            <ul class="skills">
+                <li>JAVA</li>
+                <li>HTML/CSS</li>
+
+            </ul>
+
+            <div class="contact">
+                <h3>連絡先情報</h3>
+                <p>GitHub: <a href="https://github.com/Donaldkun" target="_blank">Donaldkun</a></p>
+            </div>
+        </div>
+        
+        <div class="profile-card">
+            <img src="runa.jpg" alt="プロフィール写真" class="profile-pic">
+            <h2>ルナ</h2>
+            <p>自己紹介: 初めまして！ルナです！
+RPGのメインシステム/スキルを担当してる人です！
+
+普段はDatapackの配布などしてたりします！。</p>
+
+            <h3>スキル</h3>
+            <ul class="skills">
+                <li>datepack作成</li>
+            </ul>
+
+            <div class="contact">
+                <h3>連絡先情報</h3>
+                <p>discord server: <a href="https://discord.gg/EQY4zdHVwb" target="_blank">https://discord.gg/EQY4zdHVwb</a></p>        
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Button with Hover and Link</title>
+  <style>
+    /* From Uiverse.io by sekaiking */
+    button {
+      background-color: white;
+      color: black;
+      border-radius: 10em;
+      font-size: 17px;
+      font-weight: 600;
+      padding: 1em 2em;
+      cursor: pointer;
+      transition: all 0.3s ease-in-out;
+      border: 1px solid black;
+      box-shadow: 0 0 0 0 black;
+    }
+
+    button:hover {
+      transform: translateY(-4px) translateX(-2px);
+      box-shadow: 2px 5px 0 0 black;
+    }
+
+    button:active {
+      transform: translateY(2px) translateX(1px);
+      box-shadow: 0 0 0 0 black;
+    }
+  </style>
+</head>
+<body>
+
+ <button>
+        <span>
+            <a href="index.html">ホーム</a>
+        </span>
+    </button>
+
+</body>
+</html>
+

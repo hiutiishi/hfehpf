@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>えんじ鯖 公式サイト</title>
+    <style>
+        /* ベーススタイル */
+        body {
+            background-image: url('your-image-url.jpg'); /* 画像のURLを指定 */
+            background-size: contain; /* 画像を画面内に収める */
+            background-repeat: no-repeat; /* 画像の繰り返しを無効にする */
+            background-position: center; /* 画像の位置を中央に設定 */
+            color: white; /* テキストの色 */
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* ナビゲーション */
+        nav {
+            background-color: rgba(44, 44, 44, 0.8); /* 背景色に透明度を追加 */
+            padding: 16px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        nav h1 {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: white;
+        }
+
+        nav ul {
+            display: flex;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        nav ul li {
+            margin-left: 24px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        nav ul li a:hover {
+            color: #44BD32; /* ホバー時のアクセントカラー */
+        }
+
+        /* メインコンテンツ */
+        main {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 32px 16px;
+        }
+
+        section {
+            margin-bottom: 48px;
+        }
+
+        section h2 {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #44BD32; /* セクションタイトルのアクセントカラー */
+            margin-bottom: 16px;
+        }
+
+        /* カードスタイル */
+        .card {
+            background-color: rgba(44, 44, 44, 0.8); /* カードの背景色に透明度を追加 */
+            padding: 24px;
+            border-radius: 8px;
+            margin-bottom: 16px;
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            text-align: center;
+        }
+
+        .card h3 {
+            font-size: 1.25rem;
+            font-weight: bold;
+            color: white;
+            margin-top: 8px;
+        }
+
+        .card p {
+            color: #B0B0B0;
+            margin-top: 8px;
+        }
+
+        /* アイコンのスタイル */
+        .card i {
+            font-size: 2rem;
+            color: #44BD32; /* アイコンのアクセントカラー */
+        }
+
+        /* グリッドレイアウト */
+        .grid {
+            display: grid;
+            gap: 16px;
+        }
+
+        .grid-3 {
+            grid-template-columns: 1fr; /* デフォルトは1列 */
+        }
+
+        @media (min-width: 768px) {
+            .grid-3 {
+                grid-template-columns: repeat(3, 1fr); /* 中画面以上で3列 */
+            }
+        }
+
+        .grid-2 {
+            grid-template-columns: 1fr;
+        }
+
+        @media (min-width: 768px) {
+            .grid-2 {
+                grid-template-columns: repeat(2, 1fr); /* 中画面以上で2列 */
+            }
+        }
+
+        /* フッター */
+        footer {
+            background-color: rgba(44, 44, 44, 0.8); /* フッターの背景色に透明度を追加 */
+            padding: 16px;
+            text-align: center;
+            color: #B0B0B0;
+            font-size: 0.875rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="min-h-screen">
+        <nav>
+            <h1>えんじ鯖 公式サイト</h1>
+            <ul>
+                <li><a href="about.html">プロフィール</a></li>
+                <li><a href="skill.html">スキル</a></li>
+                <li><a href="project.html">プロジェクト</a></li>
+                <li><a href="rule.html">ルール</a></li>
+                <li><a href="server.html">参加方法</a></li>
+                <li><a href="お問い合わせ.html">お問い合わせ</a></li>
+                <li><a href="他.html">その他</a></li>
+            </ul>
+        </nav>
+
+        <main>
+            <section id="about">
+                <h2>私達について</h2>
+                <div class="card">
+                    <p>マインクラフトサーバーの運営とプラグイン開発を専門とするエンジニアです。</p>
+                    <p>大規模サーバーの運営経験とカスタムプラグインの開発を得意としています。</p>
+                </div>
+            </section>
+
+            <section id="skills">
+                <h2>スキル</h2>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <i class="fas fa-server"></i>
+                        <h3>サーバー運営</h3>
+                        <p>えんじサーバーの運営・管理</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-code"></i>
+                        <h3>Coding</h3>
+                        <p>Java html css python など</p>
+                    </div>
+                    <div class="card">
+                        <i class="fas fa-network-wired"></i>
+                        <h3>インフラ構築</h3>
+                        <p>サーバーインフラの設計と構築</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="projects">
+                <h2>プロジェクト実績</h2>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>プラグイン bot siteの作成</h3>
+                        <p>ひうちいし ドナルド るか のみで作り上げています。</p>
+                    </div>
+                    <div class="card">
+                        <h3>カスタムミニゲーム開発</h3>
+                        <p>オリジナルミニゲームのプラグイン開発と実装</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>© 2024 えんじ鯖 official公式ページ</p>
+        </footer>
+    </div>
+</body>
+</html>
+

@@ -1,0 +1,128 @@
+/* ベーススタイル */
+body {
+  background-color: #1A1A1A; /* 背景色 */
+  color: white; /* テキストの色 */
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* ナビゲーション */
+nav {
+  background-color: #2C2C2C;
+  padding: 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li {
+  margin-left: 24px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+nav ul li a:hover {
+  color: #44BD32; /* ホバー時のアクセントカラー */
+}
+
+/* メインコンテンツ */
+main {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px 16px;
+}
+
+section {
+  margin-bottom: 48px;
+}
+
+section h2 {
+  font-size: 2rem;
+  font-weight: bold;
+  color: #44BD32; /* セクションタイトルのアクセントカラー */
+  margin-bottom: 16px;
+}
+
+/* カードスタイル */
+.card {
+  background-color: #2C2C2C; /* カードの背景色 */
+  padding: 24px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.card h3 {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: white;
+  margin-top: 8px;
+}
+
+.card p {
+  color: #B0B0B0;
+  margin-top: 8px;
+}
+
+/* アイコンのスタイル */
+.card i {
+  font-size: 2rem;
+  color: #44BD32; /* アイコンのアクセントカラー */
+}
+
+/* グリッドレイアウト */
+.grid {
+  display: grid;
+  gap: 16px;
+}
+
+.grid-3 {
+  grid-template-columns: 1fr; /* デフォルトは1列 */
+}
+
+@media (min-width: 768px) {
+  .grid-3 {
+    grid-template-columns: repeat(3, 1fr); /* 中画面以上で3列 */
+  }
+}
+
+.grid-2 {
+  grid-template-columns: 1fr;
+}
+
+@media (min-width: 768px) {
+  .grid-2 {
+    grid-template-columns: repeat(2, 1fr); /* 中画面以上で2列 */
+  }
+}
+
+/* フッター */
+footer {
+  background-color: #2C2C2C;
+  padding: 16px;
+  text-align: center;
+  color: #B0B0B0;
+  font-size: 0.875rem;
+}
+

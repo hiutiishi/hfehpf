@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>メニュー例</title>
+  <style>
+    ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    li {
+      position: relative;
+    }
+
+    .submenu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      background-color: #f9f9f9;
+      padding: 0;
+      margin: 0;
+      list-style-type: none;
+      border: 1px solid #ccc;
+    }
+
+    li:hover .submenu {
+      display: block;
+    }
+
+    .submenu li a {
+      display: block;
+      padding: 10px;
+      text-decoration: none;
+      color: black;
+    }
+
+    .submenu li a:hover {
+      background-color: #ddd;
+    }
+  </style>
+</head>
+<body>
+  <ul>
+    <li>
+      <a href="他.html">その他</a>
+      <ul class="submenu">
+        <li><a href="リンク1.html">リンク1</a></li>
+        <li><a href="リンク2.html">リンク2</a></li>
+        <li><a href="リンク3.html">リンク3</a></li>
+      </ul>
+    </li>
+  </ul>
+</body>
+</html>
+
